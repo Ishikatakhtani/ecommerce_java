@@ -1,0 +1,127 @@
+:root {
+  --primary: #0066ff;
+  --accent: #00c897;
+  --bg: #f5f7fa;
+  --white: #fff;
+  --gray: #777;
+  --text-dark: #333;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --font: 'Poppins', sans-serif;
+}
+
+.orders-container {
+  padding: 40px;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text-dark);
+}
+
+.orders-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.orders-empty {
+  font-size: 16px;
+  color: var(--gray);
+}
+
+.order-card {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.order-id {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status {
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+.status.delivered {
+  color: #008000;
+  background-color: #d9f8e6;
+}
+
+.status.pending {
+  color: #b8860b;
+  background-color: #fff6d2;
+}
+
+.status.cancelled {
+  color: red;
+  background-color: #ffe1e1;
+}
+
+.items-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.order-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: var(--radius);
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-right: 12px;
+  border: 1px solid #ddd;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-qty {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.invoice-btn {
+  margin-top: 20px;
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.invoice-btn:hover {
+  background-color: #004ecc;
+}

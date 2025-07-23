@@ -1,0 +1,132 @@
+:root {
+  --primary: #0066ff;
+  --accent: #00c897;
+  --bg: #f5f7fa;
+  --white: #ffffff;
+  --text-dark: #333;
+  --gray: #777;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+
+.product-form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  animation: fadeSlide 0.5s ease;
+}
+
+.product-form-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product-form input,
+.product-form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.product-form input[type="file"] {
+  padding: 10px;
+}
+
+.product-form button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.product-form button:hover {
+  background-color: #004cb7;
+}
+
+.product-message {
+  text-align: center;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 32px;
+  color: var(--text-dark);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-list > div {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  animation: fadeSlide 0.6s ease;
+}
+
+.product-list > div:hover {
+  transform: translateY(-5px);
+}
+
+.product-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-list p {
+  color: var(--gray);
+  margin: 6px 0;
+}
+
+.product-list img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-top: 12px;
+}
+
+/* Simple Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
