@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'; // ✅ you have this
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // ✅ add this too!
 import '@fortawesome/fontawesome-free/css/all.min.css'; // ✅ for icons
-
+import '@coreui/coreui/dist/css/coreui.min.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

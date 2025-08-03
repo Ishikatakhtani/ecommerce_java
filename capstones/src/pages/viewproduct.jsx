@@ -99,6 +99,7 @@ const sortProductsByName = async (order = "asc") => {
 
         <div className="filter-group">
           <label>Search</label>
+          
           <input
             type="text"
             placeholder="Search product"
